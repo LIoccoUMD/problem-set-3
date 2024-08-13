@@ -16,8 +16,9 @@ def load_data():
         model_pred_df (pd.DataFrame): DataFrame containing model predictions
         genres_df (pd.DataFrame): DataFrame containing genre information
     '''
-    # Your code here
-
+    genres_df = pd.read_csv("data/genres.csv")
+    model_pred_df = pd.read_csv("data/prediction_model_03.csv")
+    return model_pred_df, genres_df
 
 def process_data(model_pred_df, genres_df):
     '''
